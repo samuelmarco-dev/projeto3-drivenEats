@@ -132,11 +132,15 @@ section nav{
     height: 19px;
 }
 
-.prato-de-opcao .icone-confirmacao{
+.prato-de-opcao figure img{
+    width: 19px;
+    height: 19px;
+}
+
+.prato-de-opcao figure{
     position: absolute;
     right: 14px;
-    bottom: 14px;
-    font-size: 18px;
+    bottom: 12px;
 }
 
 .margin-section{
@@ -178,9 +182,22 @@ footer button p{
     color: rgba(255, 255, 255, 1);
 }
 
+.confirmar-pedido{
+    background: rgba(50, 183, 47, 1);
+}
+
 /* CLASSES ADICIONAIS */
+.primeiro{
+    margin-left: 5px;
+}
+
+.prato-de-opcao{
+    margin-bottom: 5px;
+    box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.25);
+}
+
 .selecionado{
-    border: 4px solid #32B72F;
+    box-shadow: 0 0 0 5px rgba(50, 183, 47, 1);
 }
 
 .none{
