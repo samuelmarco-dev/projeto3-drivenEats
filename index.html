@@ -34,21 +34,21 @@
     <main>
 
         <!-- Sessão de Pratos do site (taag: section) -->
-        <section>
+        <section data-identifier="dishes">
             <div class="titulo-section">
                 <h2>Primeiro, seu prato</h2>
             </div>
             <nav class="tipo-de-prato">
 
                 <!-- Primeiro prato -->
-                <div class="prato-de-opcao primeiro" onclick="selecionarOpcaoDePrato(this, 'icone-01', 'Frango Ying Yang', 14.90)">
+                <div class="prato-de-opcao primeiro" data-identifier="dishes" data-identifier="food-option" onclick="selecionarOpcaoDePrato(this, 'icone-01', 'Frango Ying Yang', 14.90)">
                     <div>
                         <img src="/assets/frango-yin-yang.png" alt="Frango Ying Yang">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Frango Ying Yang</p>
+                        <p class="nome-prato" data-identifier="food-title">Frango Ying Yang</p>
                         <p class="ingredientes-prato">Um pouco de batata, um pouco de salada</p>
-                        <p class="valor-prato">R$ 14,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 14,90</p>
                     </div>
                     <figure>
                         <img class="none icone-01" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -56,14 +56,14 @@
                 </div>
                 
                 <!-- Segundo prato -->
-                <div class="prato-de-opcao outros" onclick="selecionarOpcaoDePrato(this, 'icone-02', 'Frango Ying Yang', 15.90)">
+                <div class="prato-de-opcao outros" data-identifier="dishes" data-identifier="food-option" onclick="selecionarOpcaoDePrato(this, 'icone-02', 'Frango Ying Yang', 15.90)">
                     <div>
                         <img src="/assets/frango-yin-yang.png" alt="Frango Ying Yang">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Frango Ying Yang</p>
+                        <p class="nome-prato" data-identifier="food-title">Frango Ying Yang</p>
                         <p class="ingredientes-prato">Um pouco de batata, um pouco de salada</p>
-                        <p class="valor-prato">R$ 15,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 15,90</p>
                     </div>
                     <figure>
                         <img class="none icone-02" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -71,14 +71,14 @@
                 </div>
                 
                 <!-- Terceiro prato -->
-                <div class="prato-de-opcao outros prato-03" onclick="selecionarOpcaoDePrato(this, 'icone-03', 'Frango Ying Yang', 16.90)">
+                <div class="prato-de-opcao outros prato-03" data-identifier="dishes" data-identifier="food-option" onclick="selecionarOpcaoDePrato(this, 'icone-03', 'Frango Ying Yang', 16.90)">
                     <div>
                         <img src="/assets/frango-yin-yang.png" alt="Frango Ying Yang">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Frango Ying Yang</p>
+                        <p class="nome-prato" data-identifier="food-title">Frango Ying Yang</p>
                         <p class="ingredientes-prato">Um pouco de batata, um pouco de salada</p>
-                        <p class="valor-prato">R$ 16,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 16,90</p>
                     </div>
                     <figure>
                         <img class="none icone-03" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -86,14 +86,14 @@
                 </div>
                 
                 <!-- Quarto prato -->
-                <div class="prato-de-opcao outros" onclick="selecionarOpcaoDePrato(this, 'icone-04', 'Frango Ying Yang', 17.90)">
+                <div class="prato-de-opcao outros" data-identifier="dishes" data-identifier="food-option" onclick="selecionarOpcaoDePrato(this, 'icone-04', 'Frango Ying Yang', 17.90)">
                     <div>
                         <img src="/assets/frango-yin-yang.png" alt="Frango Ying Yang">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Frango Ying Yang</p>
+                        <p class="nome-prato" data-identifier="food-title">Frango Ying Yang</p>
                         <p class="ingredientes-prato">Um pouco de batata, um pouco de salada</p>
-                        <p class="valor-prato">R$ 17,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 17,90</p>
                     </div>
                     <figure>
                         <img class="none icone-04" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -104,21 +104,21 @@
         </section>
 
         <!-- Sessão de Bebidas do site (taag: section) -->
-        <section class="margin-section">
+        <section class="margin-section" data-identifier="drinks">
             <div class="titulo-section">
                 <h2>Agora, sua bebida</h2>
             </div>
             <nav class="tipo-de-bebida">
 
                 <!-- Primeira bebida -->
-                <div class="prato-de-opcao primeiro" onclick="selecionarOpcaoDeBebida(this, 'icone-01', 'Coquinha gelada', 2.90)">
+                <div class="prato-de-opcao primeiro" data-identifier="drinks" data-identifier="food-option" onclick="selecionarOpcaoDeBebida(this, 'icone-01', 'Coquinha gelada', 2.90)">
                     <div>
                         <img src="/assets/coquinha-gelada.png" alt="Coquinha gelada">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Coquinha gelada</p>
+                        <p class="nome-prato" data-identifier="food-title">Coquinha gelada</p>
                         <p class="ingredientes-prato">Lata 350ml</p>
-                        <p class="valor-prato">R$ 2,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 2,90</p>
                     </div>
                     <figure>
                         <img class="none icone-01" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -126,14 +126,14 @@
                 </div>
                 
                 <!-- Segunda bebida -->
-                <div class="prato-de-opcao outros" onclick="selecionarOpcaoDeBebida(this, 'icone-02', 'Coquinha gelada', 3.90)">
+                <div class="prato-de-opcao outros" data-identifier="drinks" data-identifier="food-option" onclick="selecionarOpcaoDeBebida(this, 'icone-02', 'Coquinha gelada', 3.90)">
                     <div>
                         <img src="/assets/coquinha-gelada.png" alt="Coquinha gelada">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Coquinha gelada</p>
+                        <p class="nome-prato" data-identifier="food-title">Coquinha gelada</p>
                         <p class="ingredientes-prato">Lata 350ml</p>
-                        <p class="valor-prato">R$ 3,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 3,90</p>
                     </div>
                     <figure>
                         <img class="none icone-02" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -141,14 +141,14 @@
                 </div>
                 
                 <!-- Terceira bebida -->
-                <div class="prato-de-opcao outros" onclick="selecionarOpcaoDeBebida(this, 'icone-03', 'Coquinha gelada', 4.90)">
+                <div class="prato-de-opcao outros" data-identifier="drinks" data-identifier="food-option" onclick="selecionarOpcaoDeBebida(this, 'icone-03', 'Coquinha gelada', 4.90)">
                     <div>
                         <img src="/assets/coquinha-gelada.png" alt="Coquinha gelada">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Coquinha gelada</p>
+                        <p class="nome-prato" data-identifier="food-title">Coquinha gelada</p>
                         <p class="ingredientes-prato">Lata 350ml</p>
-                        <p class="valor-prato">R$ 4,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 4,90</p>
                     </div>
                     <figure>
                         <img class="none icone-03" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -156,14 +156,14 @@
                 </div>
                 
                 <!-- Quarta bebida -->
-                <div class="prato-de-opcao outros" onclick="selecionarOpcaoDeBebida(this, 'icone-04', 'Coquinha gelada', 5.90)">
+                <div class="prato-de-opcao outros" data-identifier="drinks" data-identifier="food-option" onclick="selecionarOpcaoDeBebida(this, 'icone-04', 'Coquinha gelada', 5.90)">
                     <div>
                         <img src="/assets/coquinha-gelada.png" alt="Coquinha gelada">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Coquinha gelada</p>
+                        <p class="nome-prato" data-identifier="food-title">Coquinha gelada</p>
                         <p class="ingredientes-prato">Lata 350ml</p>
-                        <p class="valor-prato">R$ 5,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 5,90</p>
                     </div>
                     <figure>
                         <img class="none icone-04" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -174,21 +174,21 @@
         </section>
 
         <!-- Sessão de Sobremesa do site (taag: section) -->
-        <section class="margin-section">
+        <section class="margin-section" data-identifier="desserts">
             <div class="titulo-section">
                 <h2>Por fim, sua sobremesa</h2>
             </div>
             <nav class="tipo-de-sobremesa">
                 
                 <!-- Primeira sobremesa -->
-                <div class="prato-de-opcao primeiro" onclick="selecionarOpcaoDeSobremesa(this, 'icone-01', 'Pudim', 6.90)">
+                <div class="prato-de-opcao primeiro" data-identifier="desserts" data-identifier="food-option" onclick="selecionarOpcaoDeSobremesa(this, 'icone-01', 'Pudim', 6.90)">
                     <div>
                         <img src="/assets/pudim.png" alt="Pudim">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Pudim</p>
+                        <p class="nome-prato" data-identifier="food-title">Pudim</p>
                         <p class="ingredientes-prato">Apenas pudim</p>
-                        <p class="valor-prato">R$ 6,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 6,90</p>
                     </div>
                     <figure>
                         <img class="none icone-01" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -196,14 +196,14 @@
                 </div>
                 
                 <!-- Segunda sobremesa -->
-                <div class="prato-de-opcao outros" onclick="selecionarOpcaoDeSobremesa(this, 'icone-02', 'Pudim', 7.90)">
+                <div class="prato-de-opcao outros" data-identifier="desserts" data-identifier="food-option" onclick="selecionarOpcaoDeSobremesa(this, 'icone-02', 'Pudim', 7.90)">
                     <div>
                         <img src="/assets/pudim.png" alt="Pudim">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Pudim</p>
+                        <p class="nome-prato" data-identifier="food-title">Pudim</p>
                         <p class="ingredientes-prato">Apenas pudim</p>
-                        <p class="valor-prato">R$ 7,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 7,90</p>
                     </div>
                     <figure>
                         <img class="none icone-02" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -211,14 +211,14 @@
                 </div>
                 
                 <!-- Terceira sobremesa -->
-                <div class="prato-de-opcao outros" onclick="selecionarOpcaoDeSobremesa(this, 'icone-03', 'Pudim', 8.90)">
+                <div class="prato-de-opcao outros" data-identifier="desserts" data-identifier="food-option" onclick="selecionarOpcaoDeSobremesa(this, 'icone-03', 'Pudim', 8.90)">
                     <div>
                         <img src="/assets/pudim.png" alt="Pudim">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Pudim</p>
+                        <p class="nome-prato" data-identifier="food-title">Pudim</p>
                         <p class="ingredientes-prato">Apenas pudim</p>
-                        <p class="valor-prato">R$ 8,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 8,90</p>
                     </div>
                     <figure>
                         <img class="none icone-03" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -226,14 +226,14 @@
                 </div>
                 
                 <!-- Quarta sobremesa -->
-                <div class="prato-de-opcao outros" onclick="selecionarOpcaoDeSobremesa(this, 'icone-04', 'Pudim', 9.90)">
+                <div class="prato-de-opcao outros" data-identifier="desserts" data-identifier="food-option" onclick="selecionarOpcaoDeSobremesa(this, 'icone-04', 'Pudim', 9.90)">
                     <div>
                         <img src="/assets/pudim.png" alt="Pudim">
                     </div>
                     <div class="descricao-prato">
-                        <p class="nome-prato">Pudim</p>
+                        <p class="nome-prato" data-identifier="food-title">Pudim</p>
                         <p class="ingredientes-prato">Apenas pudim</p>
-                        <p class="valor-prato">R$ 9,90</p>
+                        <p class="valor-prato" data-identifier="food-price">R$ 9,90</p>
                     </div>
                     <figure>
                         <img class="none icone-04" src="/assets/checkmark-circle.png" alt="checkmark-circle-outline">
@@ -248,7 +248,7 @@
     <!-- Conteúdo de rodapé do site (tag: Footer) -->
     <footer>
         <button type="button" class="botao" onclick="enviarPedido()">
-            <p>Selecione os 3 itens para fechar o pedido</p>
+            <p class="texto-pedido">Selecione os 3 itens para fechar o pedido</p>
         </button>
     </footer>
 

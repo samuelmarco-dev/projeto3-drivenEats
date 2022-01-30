@@ -173,7 +173,7 @@ footer button{
     border: none;
 }
 
-footer button p{
+.texto-pedido{
     width: 60%;
     font-size: 20px;
     font-weight: 400;

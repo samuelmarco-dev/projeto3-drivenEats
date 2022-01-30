@@ -17,7 +17,7 @@ em uma opção não selecionada, devemos adicionar a classe 'selecionado' */
 function selecionarOpcaoDePrato(pratoEscolhido, elementoIcone, nomedeExibicao, precoPedido){
     console.log(pratoEscolhido, elementoIcone);
     const selecionado = document.querySelector('.tipo-de-prato .selecionado');
-
+     
     // Se a classe selecionado está na tela, devemos remover
     if(selecionado !== null){
         selecionado.classList.remove('selecionado');
@@ -84,6 +84,9 @@ function verificarItensSelecionado(){
     console.log(meuPrato, minhaBebida, minhaSobremesa, botaoDePedido);
 
     if(meuPrato!==null && minhaBebida!==null && minhaSobremesa!==null){
+        botaoDePedido.innerHTML = 'Fechar pedido';
+        botaoDePedido.classList.add('texto-pedido');
+        botaoDePedido.style.fontWeight = '700';
         botaoDePedido.style.backgroundColor = 'rgba(50, 183, 47, 1)';
     }
 }
@@ -97,7 +100,7 @@ let valorTotal = 0;
 
 function enviarPedido(){
     let nomeUsuario = prompt('Por favor, nos informe seu nome:');
-    let enderecoUsuario = prompt('Agora, nos informe seu endereço:');
+    let enderecoUsuario = prompt('Agora, nos informe seu endereço, número:');
     let bairroUsuario = prompt('Por último, nos informe seu bairro:');
 
     valorTotal = (valorPrato + valorBebida + valorSobremesa).toFixed(2);
@@ -106,31 +109,25 @@ function enviarPedido(){
     window.location.href = `https://wa.me/5519994103269?text=${mensagemDoPedido}`;
 }
 
-
-// function selecionarTipoDePrato(elementoSelecionado, elementoFigure){
-//     console.log(elementoSelecionado);
-//     console.log(elementoFigure);
-
-//     const selecionado = document.querySelector(".selecionado");
-//     console.log(selecionado);
-//     const minhaEscolha = document.querySelector(".tipo-de-prato ." + elementoSelecionado);
-//     console.log(minhaEscolha);
-
-//     const escondido = document.querySelector(".none");
-//     console.log(escondido);
-//     const pratoConfirmado = document.querySelector("figure ." +elementoFigure);
-//     console.log(pratoConfirmado);
-
-//     // Se a classe selecionado está na tela, devemos remover
-//     if(selecionado !== null){
-//         selecionado.classList.remove("selecionado");
-//     }
-//     if(escondido === null){
-//         escondido.classList.add("none");
-//     }
     
-//         // Se a classe selecionado não está na tela, devemos adicionar
-//         pratoConfirmado.classList.remove("none");
-//         minhaEscolha.classList.toggle("selecionado");
-//         // OBS: podemos utilizar também a lógica do toggle
+// const none = document.querySelector('.none');
+// console.log(none);
+
+// const iconeConfirmado = pratoEscolhido.querySelector('.'+elementoIcone);
+// console.log(iconeConfirmado);
+
+
+// if(none !== null){
+//     none.classList.add('none');
 // }
+
+// iconeConfirmado.classList.remove('none');
+
+// const none = document.querySelector('none');
+// const iconeConfirmado = pratoEscolhido.querySelector('figure .'+elementoIcone);
+// console.log(iconeConfirmado)
+
+// if(none !== null){
+//     iconeConfirmado.classList.add('none')
+// }
+// iconeConfirmado.classList.remove('none');
