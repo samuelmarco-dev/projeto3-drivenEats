@@ -50,6 +50,7 @@ header p{
     align-self: center;
     margin-right: 30px;
     font-size: 44px;
+    cursor: pointer;
 }
 
 /* ESTILIZAÇÃO MAIN E SEUS FILHOS */
@@ -197,5 +198,9 @@ footer button{
 }
 
 .none{
-    display: none;
+    opacity: 0;
+}
+
+.prato-de-opcao.selecionado .none{
+    opacity: 1;
 }

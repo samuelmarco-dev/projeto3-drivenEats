@@ -109,25 +109,11 @@ function enviarPedido(){
     window.location.href = `https://wa.me/5519994103269?text=${mensagemDoPedido}`;
 }
 
-    
-// const none = document.querySelector('.none');
-// console.log(none);
+function encaminharWhatsApp(){
+    alert('Caso esteja em dúvida sobre seu combo, continue aqui...');
+    const status = confirm('Gostaria de ser encaminhado para o WhatsApp?');
 
-// const iconeConfirmado = pratoEscolhido.querySelector('.'+elementoIcone);
-// console.log(iconeConfirmado);
-
-
-// if(none !== null){
-//     none.classList.add('none');
-// }
-
-// iconeConfirmado.classList.remove('none');
-
-// const none = document.querySelector('none');
-// const iconeConfirmado = pratoEscolhido.querySelector('figure .'+elementoIcone);
-// console.log(iconeConfirmado)
-
-// if(none !== null){
-//     iconeConfirmado.classList.add('none')
-// }
-// iconeConfirmado.classList.remove('none');
+    if(status){
+        window.location.href = `https://wa.me/5519994103269`;
+    }
+}
