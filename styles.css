@@ -1,16 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #E5E5E5;
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #e5e5e5;
 }
 
-h1, h2{
+h1,
+h2 {
     font-family: Righteous;
 }
 
 /* ESTILIZAÇÃO HEADER */
-header{
+header {
     width: 100vw;
     height: 92px;
     background: rgba(207, 43, 43, 0.98);
@@ -21,14 +22,14 @@ header{
     display: flex;
     justify-content: space-between;
     z-index: 5;
-    box-shadow: 2px 3px 10px rgb(66, 66, 66, 0.90);
+    box-shadow: 2px 3px 10px rgb(66, 66, 66, 0.9);
 }
 
-.titulo-descricao{
+.titulo-descricao {
     margin-left: 21px;
 }
 
-header h1{
+header h1 {
     width: 248px;
     height: 44px;
     font-size: 44px;
@@ -37,7 +38,7 @@ header h1{
     margin-top: 8px;
 }
 
-header p{
+header p {
     width: 226px;
     height: 17px;
     font-size: 18px;
@@ -46,7 +47,7 @@ header p{
     margin-top: 6px;
 }
 
-.icone{
+.icone {
     align-self: center;
     margin-right: 30px;
     font-size: 44px;
@@ -54,7 +55,7 @@ header p{
 }
 
 /* ESTILIZAÇÃO MAIN E SEUS FILHOS */
-main{
+main {
     background-color: rgba(238, 238, 238, 1);
     margin-top: 123px;
     margin-bottom: 110px;
@@ -62,18 +63,18 @@ main{
     /* width:calc(100vw - 19px); */
 }
 
-section{
+section {
     /* width: calc(100vw - 19px); */
     margin-left: 19px;
 }
 
-section .titulo-section{
+section .titulo-section {
     font-size: 26px;
     font-weight: 400;
     line-height: 32px;
 }
 
-section .prato-de-opcao{
+section .prato-de-opcao {
     min-width: 172px;
     height: 216px;
     border-radius: 9px;
@@ -82,16 +83,16 @@ section .prato-de-opcao{
     position: relative;
 }
 
-section nav{
+section nav {
     display: flex;
     overflow-x: scroll;
 }
 
-.outros{
+.outros {
     margin-left: 16px;
 }
 
-.prato-de-opcao div{
+.prato-de-opcao div {
     width: 144px;
     height: 87px;
     border-radius: 4px;
@@ -99,11 +100,11 @@ section nav{
     padding-top: 18px;
 }
 
-.descricao-prato{
+.descricao-prato {
     width: 144px;
 }
 
-.descricao-prato .nome-prato{
+.descricao-prato .nome-prato {
     font-size: 16px;
     font-weight: 700;
     line-height: 19px;
@@ -112,7 +113,7 @@ section nav{
     height: 23px;
 }
 
-.descricao-prato .ingredientes-prato{
+.descricao-prato .ingredientes-prato {
     font-size: 15px;
     font-weight: 300;
     line-height: 18px;
@@ -123,7 +124,7 @@ section nav{
     height: 39px;
 }
 
-.descricao-prato .valor-prato{
+.descricao-prato .valor-prato {
     font-size: 16px;
     font-weight: 400;
     line-height: 19px;
@@ -133,36 +134,36 @@ section nav{
     height: 19px;
 }
 
-.prato-de-opcao figure img{
+.prato-de-opcao figure img {
     width: 19px;
     height: 19px;
 }
 
-.prato-de-opcao figure{
+.prato-de-opcao figure {
     position: absolute;
     right: 14px;
     bottom: 12px;
 }
 
-.margin-section{
+.margin-section {
     /* width: calc(100vw - 19px); */
     margin-top: 27px;
 }
 
 /* ESTILIZAÇÃO RODAPÉ E BOTÃO*/
-footer{
+footer {
     width: 100vw;
     height: 92px;
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: rgba(255, 255, 255, 1); 
+    background-color: rgba(255, 255, 255, 1);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-footer button{
+footer button {
     width: 364px;
     height: 61px;
     border-radius: 50px;
@@ -174,7 +175,7 @@ footer button{
     border: none;
 }
 
-.texto-pedido{
+footer button p {
     width: 60%;
     font-size: 20px;
     font-weight: 400;
@@ -184,23 +185,23 @@ footer button{
 }
 
 /* CLASSES ADICIONAIS */
-.primeiro{
+.primeiro {
     margin-left: 5px;
 }
 
-.prato-de-opcao{
+.prato-de-opcao {
     margin-bottom: 5px;
     box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.25);
 }
 
-.selecionado{
+.selecionado {
     box-shadow: 0 0 0 5px rgba(50, 183, 47, 1);
 }
 
-.none{
+.none {
     opacity: 0;
 }
 
-.prato-de-opcao.selecionado .none{
+.prato-de-opcao.selecionado .none {
     opacity: 1;
 }

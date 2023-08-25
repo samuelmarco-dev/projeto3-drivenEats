@@ -17,23 +17,17 @@
 
 <body>
 
-    <!--Topo do site (tag: Header)-->
     <header>
         <div class="titulo-descricao">
-            <a href="#">
             <h1>DrivenEats</h1>
             <p>Sua comida em 6 minutos</p>
-            </a>
         </div>
         <div class="icone" onclick="encaminharWhatsApp()">
             <ion-icon name="logo-whatsapp"></ion-icon>
         </div>
     </header>
 
-    <!-- Conteúdo principal do site (tag: Main) -->
     <main>
-
-        <!-- Sessão de Pratos do site (taag: section) -->
         <section data-identifier="dishes">
             <div class="titulo-section">
                 <h2>Primeiro, seu prato</h2>
@@ -43,7 +37,7 @@
                 <!-- Primeiro prato -->
                 <div class="prato-de-opcao primeiro" data-identifier="dishes" data-identifier="food-option" onclick="selecionarOpcaoDePrato(this, 'icone-01', 'Frango Ying Yang', 14.90)">
                     <div>
-                        <img src="/assets/frango-yin-yang.png" alt="Frango Ying Yang">
+                        <img src="./assets/frango-yin-yang.png" alt="Frango Ying Yang">
                     </div>
                     <div class="descricao-prato">
                         <p class="nome-prato" data-identifier="food-title">Frango Ying Yang</p>
@@ -103,7 +97,6 @@
             </nav>
         </section>
 
-        <!-- Sessão de Bebidas do site (taag: section) -->
         <section class="margin-section" data-identifier="drinks">
             <div class="titulo-section">
                 <h2>Agora, sua bebida</h2>
@@ -173,7 +166,6 @@
             </nav>
         </section>
 
-        <!-- Sessão de Sobremesa do site (taag: section) -->
         <section class="margin-section" data-identifier="desserts">
             <div class="titulo-section">
                 <h2>Por fim, sua sobremesa</h2>
@@ -245,10 +237,9 @@
 
     </main>
 
-    <!-- Conteúdo de rodapé do site (tag: Footer) -->
     <footer>
         <button type="button" class="botao" onclick="enviarPedido()">
-            <p class="texto-pedido">Selecione os 3 itens para fechar o pedido</p>
+            <p>Selecione os 3 itens para fechar o pedido</p>
         </button>
     </footer>
 
