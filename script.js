@@ -35,10 +35,6 @@ function selecionarOpcaoDePrato(
     pratoSelecionado = nomedeExibicao;
     valorPrato = precoPedido;
 
-    if (pratoEscolhido == meuPrato) {
-        selecionado?.classList.remove("selecionado");
-    }
-
     // Verificar Botao
     verificarItensSelecionado();
 }
